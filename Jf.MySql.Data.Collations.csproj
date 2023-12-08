@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <LangVersion>default</LangVersion>
+        <TargetFrameworks>net45;netstandard2.0;</TargetFrameworks>
+        <Title>MySql.Data.CollationInterceptor</Title>
+        <Authors>David Raška</Authors>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Description>Fixes connecting to newer MariaDB server (&gt;=10.10.1) using MySql.Data connector.
+Enables support for utf8mb3 in older connector.</Description>
+        <Nullable>enable</Nullable>
+        <Version>0.1.0</Version>
+        <Copyright>Copyright (c) 2023 David Raška</Copyright>
+        <PackageTags>utf8mb3, uca1400, mysql connector, mariadb </PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
+        <PackageReference Include="MySql.Data" Version="6.7.9"/>
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+        <PackageReference Include="MySql.Data" Version="6.10.7"/>
+        <PackageReference Include="System.Runtime" Version="4.3.1" />
+    </ItemGroup>
+
+</Project>
