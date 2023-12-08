@@ -9,11 +9,6 @@ namespace Jf.MySql.Data.Collations
 	/// </summary>
 	public sealed class Interceptor : BaseCommandInterceptor
 	{
-		/*
-		 * Add following to connectionstring to enable interceptor
-		 * ;commandinterceptors=Zoner.Insight.Utilities.Utilities.MySqlCollationInterceptor,Zoner Insight Services
-		 */
-
 		public override bool ExecuteReader(string sql, CommandBehavior behavior, ref MySqlDataReader returnValue)
 		{
 			if (!sql.Equals("SHOW COLLATION", StringComparison.OrdinalIgnoreCase))

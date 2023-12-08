@@ -4,7 +4,7 @@ This library solves connection problems of [MySQL Connector/NET](https://github.
 
 ## Licensing
 
-This library is released under [MIT license](LICENSE).
+This library is released under [MIT license](LICENSE.txt).
 
 ## How it works
 
