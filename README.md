@@ -1,7 +1,7 @@
 ﻿# Jf.MySql.Data.Collations
 
-![GitHub License](https://img.shields.io/github/license/jeffraska/Jf.MySql.Data.Collations)
-![Nuget](https://img.shields.io/nuget/v/Jf.MySql.Data.Collations)
+[![GitHub License](https://img.shields.io/github/license/jeffraska/Jf.MySql.Data.Collations)](LICENSE.txt)
+[![Nuget](https://img.shields.io/nuget/v/Jf.MySql.Data.Collations)](https://nuget.org/packages/Jf.MySql.Data.Collations)
 
 
 This library solves connection problems of [MySQL Connector/NET](https://github.com/mysql/mysql-connector-net) to newest versions of MariaDB (>=10.10.1) with implemented UCA-14.0.0 collations.
