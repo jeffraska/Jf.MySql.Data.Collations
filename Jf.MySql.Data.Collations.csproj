@@ -9,14 +9,18 @@
         <Description>Fixes connecting to newer MariaDB server (&gt;=10.10.1) using MySql.Data connector.
 Enables support for utf8mb3 in older connector.</Description>
         <Nullable>enable</Nullable>
-        <Version>0.1.0</Version>
+        <Version>0.2.0</Version>
+        <AssemblyVersion>0.2.0</AssemblyVersion>
+        <FileVersion>0.2.0</FileVersion>
         <Copyright>Copyright (c) 2023 David Raška</Copyright>
         <PackageTags>utf8mb3, uca1400, mysql connector, mariadb </PackageTags>
         <PackageProjectUrl>https://github.com/jeffraska/Jf.MySql.Data.Collations/</PackageProjectUrl>
         <PackageLicense>https://github.com/jeffraska/Jf.MySql.Data.Collations/blob/main/LICENSE</PackageLicense>
         <RepositoryUrl>https://github.com/jeffraska/Jf.MySql.Data.Collations/</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReleaseNotes>Fix compatibility issue with MySql.Data &gt;= 6.10.0</PackageReleaseNotes>
+        <PackageIcon>icon.png</PackageIcon>
     </PropertyGroup>
 
     <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
@@ -30,6 +34,6 @@ Enables support for utf8mb3 in older connector.</Description>
 
     <ItemGroup>
         <None Include="README.md" Pack="true" PackagePath="\"/>
-        <None Include="LICENSE.txt" Pack="true" PackagePath=""/>
+        <None Include="LICENSE" Pack="true" PackagePath=""/>
     </ItemGroup>
 </Project>
